@@ -27,7 +27,7 @@ module.exports = (robot) ->
 
         # Build response
         response = ''
-        response += titleText + '\n'
+        response += ':memo: ' + titleText + '\n'
         response += splittedContents[0] + '\n'
         response += splittedContents[1] + '\n'
         response += splittedContents[2] + '\n'
