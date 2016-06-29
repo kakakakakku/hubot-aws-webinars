@@ -25,12 +25,15 @@ module.exports = (robot) ->
         splittedContents = splitContents body.eq(0).text()
         joinUrl = body.eq(1).find('a').attr('href')
 
-        msg.send titleText
-        msg.send splittedContents[0]
-        msg.send splittedContents[1]
-        msg.send splittedContents[2]
-        msg.send joinUrl
-        msg.send ''
+        # Build response
+        response = ''
+        response += titleText + '\n'
+        response += splittedContents[0] + '\n'
+        response += splittedContents[1] + '\n'
+        response += splittedContents[2] + '\n'
+        response += joinUrl
+
+        msg.send response
 
 # Split Body
 #   - Time
