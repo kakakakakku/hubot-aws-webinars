@@ -35,7 +35,7 @@ module.exports = (robot) ->
 
         msg.send response
 
-# Split Body
+# Split Contents
 #   - Time
 #   - Target
 #   - Summary
