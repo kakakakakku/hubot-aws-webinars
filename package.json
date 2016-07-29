@@ -1,6 +1,6 @@
 {
   "name": "hubot-aws-webinars",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A hubot script for AWS Webinar",
   "main": "index.coffee",
   "scripts": {
