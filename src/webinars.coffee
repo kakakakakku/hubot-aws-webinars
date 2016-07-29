@@ -2,13 +2,13 @@
 #   Get AWS Webinars schedule
 #
 # Commands:
-#   hubot aws webinars - Get AWS Webinars schedule
+#   hubot aws (webinars|blackbelt) - Get AWS Webinars schedule
 cheerio = require 'cheerio'
 request = require 'request'
 
 module.exports = (robot) ->
 
-  robot.respond /aws webinars$/i, (msg) ->
+  robot.respond /aws (webinars|blackbelt)$/i, (msg) ->
     url = 'https://aws.amazon.com/jp/about-aws/events/webinars'
     request url, (_, res) ->
       $ = cheerio.load res.body

@@ -13,6 +13,7 @@ After that, add `hubot-aws-webinars` to your `external-scripts.json`.
 ## Commands
 
 * `aws webinars`
+* `aws blackbelt`
 
 ## Usage
 
